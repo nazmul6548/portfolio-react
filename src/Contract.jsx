@@ -14,7 +14,7 @@ const Contract = () => {
 const handleSubmit =(e) =>{
     e.preventDefault();
     emailjs
-    .sendForm('service_q929zia', 'template_2w9uecc', form.current, {
+    .sendForm('service_q929zia', 'template_a07tj9e', form.current, {
       publicKey: 'aPf5bQWA4Ic9AEONu',
     })
     .then(
