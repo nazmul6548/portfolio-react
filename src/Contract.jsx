@@ -31,11 +31,11 @@ const handleSubmit =(e) =>{
 }
     
     return (
-        <div className='bg-[#2e0249]'>
+        <div id="contact" className='bg-[#2e0249]'>
             <div className="pt-6 max-w-7xl max-lg:max-w-3xl mx-auto  ">
     <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
         <div>
-            <h1 className="text-4xl font-bold text-white">Contract With Me</h1>
+            <h1 className="text-4xl font-bold text-white">Contact With Me</h1>
             <p className="text-sm text-gray-300 mt-4 leading-relaxed">I am a front-end web developer. You can contact me for hiring and other inquiries. My contact information is provided below.</p>
 
             <ul className="mt-12 space-y-8">
@@ -82,7 +82,7 @@ const handleSubmit =(e) =>{
             <p className="text-sm font-semibold text-gray-800">I'm interested in...</p>
 
             <div className="space-y-4 max-lg:mt-4">
-                <button type="button" className="px-4 py-2 mt-3 rounded-lg bg-[#a91079] text-white text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4">Web design</button>
+                <button type="button" className="px-4 py-2 mt-3 rounded-lg bg-[#a91079] text-white text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4">Web development</button>
                 
                 
             </div>

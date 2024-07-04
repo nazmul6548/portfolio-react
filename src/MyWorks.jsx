@@ -2,7 +2,7 @@
 
 const MyWorks = () => {
     return (
-        <div className="bg-primary-gradient font-sans  pt-20">
+        <div id="projects" className="bg-primary-gradient font-sans  pt-20">
   <div className="max-w-7xl mx-auto">
     <div className="text-center relative">
       <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative after:absolute after:w-6/6 after:h-1 after:left-0 after:right-0 after:-bottom-4 after:mx-auto after:bg-[#a91079] after:rounded-full">My Recent Works</h2>

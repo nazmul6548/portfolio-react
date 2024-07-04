@@ -25,12 +25,12 @@ const Header = () => {
       <div className="container px-6 py-16 mx-auto">
         <div className="items-center lg:flex">
           <div className="w-full lg:w-1/2">
-            <div className="lg:max-w-lg">
+            <div className=" mt-10 md:ml-16 lg:max-w-lg">
               <h1 className="text-3xl font-semibold text-white dark:text-white lg:text-4xl">Hello, I'am <br /><span className="bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text">NaZMuL ISLAM JuWeL</span></h1>
               
-              <p className="mt-3 text-white dark:text-gray-400">Front_End Web Developer</p>
+              <p className="mt-3 text-white dark:text-gray-400">I am a passionate web developer. Over the past eight months, I have been dedicated to honing my skills in web development, focusing on both frontend and backend technologies. <br />I am committed to advancing my skills and taking on new challenges in the web development field. My goal is to continuously improve and stay updated with the latest industry trends, ultimately becoming an expert in full-stack development.</p>
               
-              <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+              <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-[#a91079] rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
   <div className="flex justify-center  items-center gap-2">
   <a href="https://drive.google.com/file/d/1CSsuUrEh5i38u7ttUo1c4symiDefP_bs/view" download="NaZMuL_ISLAM_JuWeL_Resume.pdf">
     Resume 

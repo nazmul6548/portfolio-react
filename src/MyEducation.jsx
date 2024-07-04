@@ -2,7 +2,7 @@
 
 const MyEducation = () => {
     return (
-        <div>
+        <div id="educations">
              <div className="bg-primary-gradient pt-20 px-4 pb-20 font-sans-serif text-[#333]">
              <div className="text-center relative">
   <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative after:content-[''] after:absolute after:w-6/6 after:h-1 after:left-0 after:right-0 after:bottom-[-10px] after:mx-auto after:bg-[#a91079] after:rounded-full">

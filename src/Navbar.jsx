@@ -23,28 +23,28 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-primary-gradient rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Skills</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Education</a></li>
-        <li><a>Contract</a></li>
-        <li><a>Contract</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#educations">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-3xl">Profile</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Skills</a></li>
-      <li><a>Projects</a></li>
-      <li><a>Education</a></li>
-      <li><a>Contract</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#educations">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
   <div className="navbar-end">
     
     <div className="font-[sans-serif] space-x-4 space-y-4 text-center">
     <button type="button"
-        className="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-[#2A1454] to-[#c2b1e0]">Hire Me</button>
+        className="px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium outline-none bg-gradient-to-tr hover:bg-gradient-to-tl from-[#2A1454] to-[#c2b1e0]"><a href="#contact">Hire Me</a></button>
     </div>
   </div>
 </div>

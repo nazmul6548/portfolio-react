@@ -34,7 +34,7 @@ const MySkills = () => {
       marginBottom: '0.75rem'
     };
     return (
-        <div>
+        <div id="skills">
             <div className="bg-[#0f0715] font-[sans-serif]">
   <div className="max-w-6xl mx-auto py-16 px-4">
     {/* <h2 className="bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text text-4xl font-extrabold text-center mb-16">MY SKILLS</h2> */}
