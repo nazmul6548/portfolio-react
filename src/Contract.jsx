@@ -5,21 +5,38 @@ import { FaMobileScreen } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
 // import emailjs from '@emailjs';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 // import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import Swal from "sweetalert2";
 const Contract = () => {
     const form = useRef();
    
-const handleSubmit =(e) =>{
+const sendEmail =(e) =>{
     e.preventDefault();
     emailjs
-    .sendForm('service_q929zia', 'template_a07tj9e', form.current, {
-      publicKey: 'aPf5bQWA4Ic9AEONu',
+    .sendForm('service_8movq0m', 'template_a07tj9e', form.current, {
+      publicKey: 'MKXpqKZYsylYqPrM3',
     })
     .then(
       () => {
         console.log('SUCCESS!');
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            }
+          });
+          Toast.fire({
+            icon: "success",
+            title: "successfully send mail"
+          });
       },
       (error) => {
         console.log('FAILED...', error.text);
@@ -87,16 +104,16 @@ const handleSubmit =(e) =>{
                 
             </div>
 
-            <form ref={form} onSubmit={handleSubmit} className="mt-8 space-y-4">
+            <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-4">
               <input type="text"
                                   
-                                name="name" placeholder="Name" className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
+                                name="name" required placeholder="Name" className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
               <input type="email" name="email"
                
-              placeholder="Email" className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
+              placeholder="Email" required className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
               <input type="text" name="subject"
          
-              placeholder="Subject" className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
+              placeholder="Subject" required className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
               <textarea placeholder="Message" name="message"
               
               rows="6" className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-[#a91079]"></textarea>
