@@ -1,8 +1,10 @@
+import { Fade } from "react-awesome-reveal";
 
 
 const Footer = () => {
     return (
         <div>
+          <Fade cascade>
             <footer className="bg-primary-gradient py-12 px-6 font-sans tracking-wide">
       <div className="flex flex-col items-center gap-6">
 
@@ -50,6 +52,7 @@ const Footer = () => {
         </ul>
         </div>
         </footer>
+        </Fade>
         </div>
     );
 };

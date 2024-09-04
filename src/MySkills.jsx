@@ -1,127 +1,162 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import { Autoplay, Virtual, Navigation, Pagination } from "swiper/modules";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./skill.css";
 
 const MySkills = () => {
-    const [isHovered, setIsHovered] = useState(false);
+  // const [setSwiperRef] = useState(null);
+  const swiperRef = useRef(null);
 
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-    };
-  
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-    };
-  
-    const containerStyle = {
-      transform: isHovered ? 'rotate(360deg)' : 'rotate(0deg)',
-      transition: 'transform 1.3s ease-in-out',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '2rem'
-    };
-  
-    const imgStyle = {
-      width: '5rem',
-      height: '5rem'
-    };
-  
-    const headingStyle = {
-      color: '#4A4A4A',
-      fontSize: '1.25rem',
-      fontWeight: '600',
-      marginBottom: '0.75rem'
-    };
-    return (
-        <div id="skills">
-            <div className="bg-[#0f0715] font-[sans-serif]">
-  <div className="max-w-6xl mx-auto py-16 ">
-    {/* <h2 className="bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text text-4xl font-extrabold text-center mb-16">MY SKILLS</h2> */}
-    <div className="text-center relative ">
-  <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative after:content-[''] after:absolute after:w-6/6 after:h-1 after:left-0 after:right-0 after:bottom-[-10px] after:mx-auto after:bg-[#a91079] after:rounded-full">
-    My Skills
-  </h2>
-</div>
+  const skillsData = [
+    {
+      title: "HTML",
 
-    <div className="grid grid-cols-2 pt-12  md:grid-cols-7  gap-10 mx-auto max-md:max-w-md  justify-center items-center">
-    <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div  style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17qc.svg"  alt="" style={imgStyle} className="w-20 h-20"/>
-          <h3 style={headingStyle} className="text-gray-800 text-xl font-semibold mb-3">Node.js</h3>
-          
-        </div>
-      </div>
-      {/*  */}
-      <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17oh.svg" alt="" style={imgStyle} className="w-20 h-20"/>
-          <h3 style={headingStyle} className="text-gray-800 text-xl font-semibold mb-3">MongoDB</h3>
-          
-        </div>
-      </div>
-      {/*  */}
-      <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17qy.svg" alt="" className="w-20 h-20"/>
-          <h3 className="text-gray-800 text-xl font-semibold mb-3">React.js</h3>
-          
-        </div>
-      </div>
-      {/*  */}
-      <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17p4.svg" alt="" className="w-20 h-20"/>
-          <h3 className="text-gray-800 text-xl font-semibold mb-3">Firebase</h3>
-          
-        </div>
-      </div>
-      {/*  */}
-      <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17qz.svg" alt="" className="w-20 h-20"/>
-          <h3 className="text-gray-800 text-xl font-semibold mb-3">javaScript</h3>
-          
-        </div>
-      </div>
-      {/*  */}
-      <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17pw.svg" alt="" className="w-20 h-20"/>
-          <h3 className="text-gray-800 text-xl font-semibold mb-3">VsCode</h3>
-          
-        </div>
-      </div>
-      {/*  */}
-      <div className="bg-white hover:bg-[#8750f7] w-32 md:w-40 h-40 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-        <div style={containerStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className=" flex justify-center items-center flex-col">
-          <img src="https://svgshare.com/i/17p5.svg" alt="" className="w-20 h-20"/>
-          <h3 className="text-gray-800 text-xl font-semibold mb-3">Tailwind</h3>
-          
-        </div>
-      </div>
+      imgSrc: "https://svgshare.com/i/1A4Q.svg",
+    },
+    {
+      title: "CSS",
 
+      imgSrc: "https://svgshare.com/i/1A3F.svg",
+    },
+    {
+      title: "Tailwind CSS",
+
+      imgSrc: "https://svgshare.com/i/1A3X.svg",
+    },
+    {
+      title: "JavaScript",
+
+      imgSrc: "https://svgshare.com/i/1A2X.svg",
+    },
+    {
+      title: "React",
+
+      imgSrc: "https://svgshare.com/i/1A1z.svg",
+    },
+    {
+      title: "Node.js",
+
+      imgSrc: "https://svgshare.com/i/1A3L.svg",
+    },
+    {
+      title: "MongoDB",
+
+      imgSrc: "https://svgshare.com/i/1A2d.svg",
+    },
+    {
+      title: "Express.js",
+
+      imgSrc: "https://svgshare.com/i/1A3u.svg",
+    },
+    {
+      title: "Firebase",
+
+      imgSrc: "https://svgshare.com/i/1A20.svg",
+    },
+    {
+      title: "VS Code",
+
+      imgSrc: "https://svgshare.com/i/1A0u.svg",
+    },
+    {
+      title: "Git",
+
+      imgSrc: "https://svgshare.com/i/1A1p.svg",
+    },
+    {
+      title: "GitHub",
+
+      imgSrc: "https://svgshare.com/i/1A2u.svg",
+    },
+    {
+      title: "Next.js",
+
+      imgSrc: "https://svgshare.com/i/1A4D.svg",
+    },
+    {
+      title: "Stripe",
+
+      imgSrc: "https://svgshare.com/i/1A2n.svg",
+    },
+    {
+      title: "Microsoft",
+
+      imgSrc: "https://svgshare.com/i/1A1R.svg",
+    },
+    {
+      title: "Figma",
+
+      imgSrc: "https://svgshare.com/i/1A3j.svg",
+    },
+    {
+      title: "Canva",
+
+      imgSrc: "https://svgshare.com/i/1A3E.svg",
+    },
+    {
+      title: "React Router",
+
+      imgSrc: "https://svgshare.com/i/1A2t.svg",
+    },
+  ];
+
+  const [slides] = useState(skillsData);
+
+  return (
+
+
+<div id="skills">
+<div className="font-[sans-serif] bg-[#1d0e35]">
+  <div className="max-w-7xl mx-auto py-16">
+    <div className="text-center relative">
+      <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
+        My Skills
+        <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
+      </h2>
     </div>
+
+    <Fade cascade>
+      <Swiper
+        modules={[Virtual, Navigation, Pagination, Autoplay]}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        slidesPerView={6}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {skillsData.map((slideContent, index) => (
+          <SwiperSlide key={index} virtualIndex={index}>
+            <div className="p-6 bg-white rounded-lg shadow-lg text-center w-[200px] h-[200px]">
+              <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4">
+                <img
+                  src={slideContent.imgSrc}
+                  alt={slideContent.title}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold">{slideContent.title}</h3>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Fade>
   </div>
 </div>
-{/*  */}
-
-        </div>
-    );
+</div>
+    
+  );
 };
 
 export default MySkills;

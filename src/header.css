@@ -1,0 +1,44 @@
+/* @keyframes rotateBorder {
+    0% {
+      border-color: #8750f7;
+    }
+    50% {
+      border-color: #a91079;
+    }
+    100% {
+      border-color: #8750f7;
+    }
+  }
+  
+  .animate-rotateBorder {
+    animation: rotateBorder 5s infinite linear;
+  }
+   */
+
+/* Border Animation */
+@keyframes rotateBorder {
+    0% {
+      border-color: #8750f7;
+    }
+    50% {
+      border-color: #a91079;
+    }
+    100% {
+      border-color: #8750f7;
+    }
+  }
+  
+  .animate-rotateBorder {
+    animation: rotateBorder 5s infinite linear;
+  }
+  
+  /* Shadow Effect */
+  .shadow-animate {
+    box-shadow: 0 4px 8px rgba(142, 142, 142, 0.2), 0 8px 16px rgba(153, 153, 153, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .shadow-animate:hover {
+    box-shadow: 0 10px 20px rgba(142, 142, 142, 0.3), 0 20px 40px rgba(142, 141, 141, 0.2);
+  }
+  

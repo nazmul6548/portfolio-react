@@ -1,0 +1,21 @@
+@keyframes scrollImage {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-85%);
+    }
+  }
+  
+  .animate-scrollImage {
+    animation: scrollImage 10s linear infinite;
+  }
+  @keyframes riseFall {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

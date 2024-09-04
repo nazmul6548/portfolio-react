@@ -9,6 +9,7 @@ import emailjs from '@emailjs/browser';
 // import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import Swal from "sweetalert2";
+import { Fade } from "react-awesome-reveal";
 const Contract = () => {
     const form = useRef();
    
@@ -48,6 +49,7 @@ const sendEmail =(e) =>{
 }
     
     return (
+            <Fade cascade>
         <div id="contact" className='bg-[#2e0249]'>
             <div className="pt-6 max-w-7xl max-lg:max-w-3xl mx-auto  ">
     <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
@@ -125,6 +127,7 @@ const sendEmail =(e) =>{
     </div>
 </div>
         </div>
+</Fade>
     );
 };
 
