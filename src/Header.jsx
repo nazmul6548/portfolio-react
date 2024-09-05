@@ -4,7 +4,20 @@ import { Fade } from "react-awesome-reveal";
 // import Typewriter from 'typewriter-effect/dist/core';
 import Typewriter from 'typewriter-effect';
 import "./header.css"
+import { useRef } from "react";
+import { useInView,motion } from "framer-motion";
 const Header = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 });
+
+  const paragraphVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
 
   return (
     <div>
@@ -45,7 +58,13 @@ const Header = () => {
 </h1>
 
 
-                  <p className="mt-2 md:mt-4 text-justify text-xs md:text-sm text-white dark:text-gray-400">
+<motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={paragraphVariants}
+          >
+            <p className="mt-2 md:mt-4 text-justify text-xs md:text-sm text-white dark:text-gray-400">
                     I am a passionate web developer. Over the past eight months,
                     I have been dedicated to honing my skills in web
                     development, focusing on both frontend and backend
@@ -55,6 +74,7 @@ const Header = () => {
                     latest industry trends, ultimately becoming an expert in
                     full-stack development.
                   </p>
+          </motion.div>
 
                  
                   <a
@@ -75,13 +95,20 @@ const Header = () => {
 
              
 <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 object-cover">
-  <div className="relative rounded-full w-[300px] md:w-[350px] h-[300px] md:h-[350px] flex items-center justify-center overflow-hidden border-8 border-transparent animate-rotateBorder shadow-animate">
+<motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={paragraphVariants}
+          >
+           <div className="relative rounded-full w-[300px] md:w-[350px] h-[300px] md:h-[350px] flex items-center justify-center overflow-hidden border-8 border-transparent animate-rotateBorder shadow-animate">
     <img
       className="w-full h-full rounded-full object-cover"
       src="https://i.ibb.co/KGk3k5r/Whats-App-Image-2024-06-19-at-3-35-54-PM-removebg.png"
       alt="Catalogue-pana.svg"
     />
   </div>
+          </motion.div>
 </div>
 
 

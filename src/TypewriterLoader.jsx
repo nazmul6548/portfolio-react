@@ -5,7 +5,7 @@ const TypewriterLoader = ({ onComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onComplete(); 
-    }, 3000); 
+    }, 2500); 
 
     return () => clearTimeout(timer); 
   }, [onComplete]);

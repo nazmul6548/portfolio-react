@@ -9,8 +9,14 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 
 import "react-tooltip/dist/react-tooltip.css"; // Include the tooltip CSS
 import "./skill.css";
+import { useInView,motion } from "framer-motion";
 
 const MySkills = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 });
+
+  
+
   const swiperRef = useRef(null);
 
   const skillsData = [
@@ -122,6 +128,14 @@ const MySkills = () => {
         "A routing library for React that enables navigation among views of various components in a React application.",
     },
   ];
+  const paragraphVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
 
   const [slides] = useState(skillsData);
 
@@ -134,6 +148,14 @@ const MySkills = () => {
               My Skills
               <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
             </h2>
+           
+
+            <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={paragraphVariants}
+          >
             <p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/4 md:m-auto">
               I’m dedicated to crafting exceptional web experiences, blending
               creativity with technical expertise. My skills span HTML, CSS, and
@@ -141,9 +163,11 @@ const MySkills = () => {
               excel at creating visually stunning and highly functional designs,
               ensuring every project is both engaging and effective.
             </p>
+          </motion.div>
+
           </div>
 
-          <Fade cascade>
+          
             <Swiper
               modules={[Virtual, Navigation, Pagination, Autoplay]}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -185,6 +209,7 @@ const MySkills = () => {
             >
               {skillsData.map((slideContent, index) => (
                 <SwiperSlide key={index} virtualIndex={index}>
+                  <Fade cascade>
                   <div
                     className="p-6 bg-white rounded-tr-[90px] shadow-lg text-center w-[200px] h-[200px] hover:bg-purple-100 relative bottom-6 left-0 right-0"
                       
@@ -200,6 +225,7 @@ const MySkills = () => {
                     </div>
                     <h3 className="text-xl font-bold">{slideContent.title}</h3>
                   </div>
+                  </Fade>
 
                   <ReactTooltip
                     id={`tooltip-${index}`}
@@ -212,7 +238,7 @@ const MySkills = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </Fade>
+          
         </div>
       </div>
     </div>

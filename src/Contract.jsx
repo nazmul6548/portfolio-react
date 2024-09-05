@@ -10,10 +10,13 @@ import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import { Fade } from "react-awesome-reveal";
+import { useInView,motion } from "framer-motion";
 const Contract = () => {
     const form = useRef();
    
 const sendEmail =(e) =>{
+   
+
     e.preventDefault();
     emailjs
     .sendForm('service_8movq0m', 'template_a07tj9e', form.current, {
@@ -47,6 +50,17 @@ const sendEmail =(e) =>{
     
     e.target.reset()
 }
+const ref = useRef(null);
+const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 });
+
+const paragraphVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: "easeInOut" },
+  },
+};
     
     return (
             <Fade cascade>
@@ -55,7 +69,14 @@ const sendEmail =(e) =>{
     <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
         <div>
             <h1 className="text-4xl font-bold text-white">Contact With Me</h1>
+            <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={paragraphVariants}
+          >
             <p className="text-sm text-gray-300 mt-4 leading-relaxed">I am a front-end web developer. You can contact me for hiring and other inquiries. My contact information is provided below.</p>
+          </motion.div>
 
             <ul className="mt-12 space-y-8">
                 <li className="flex items-center">

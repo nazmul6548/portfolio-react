@@ -2,8 +2,22 @@
 
 import { Fade } from "react-awesome-reveal";
 import "./mywork.css"
+import { useRef } from "react";
+import { useInView,motion } from "framer-motion";
 
 const MyWorks = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 });
+
+  const paragraphVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
+
     return (
         <div id="projects" className="bg-primary-gradient font-sans pt-20">
             <div className="max-w-7xl mx-auto">
@@ -12,12 +26,20 @@ const MyWorks = () => {
                         My Recent Works
                         <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
                     </h2>
-                    <p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/4 md:m-auto">My portfolio highlights a range of innovative projects, each demonstrating my skills in web development and design. From creating interactive user interfaces to building robust applications, my work reflects a dedication to quality and functionality. Explore these projects to see how I transform concepts into impactful digital solutions.</p>
+                    <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={paragraphVariants}
+          >
+            <p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/4 md:m-auto">My portfolio highlights a range of innovative projects, each demonstrating my skills in web development and design. From creating interactive user interfaces to building robust applications, my work reflects a dedication to quality and functionality. Explore these projects to see how I transform concepts into impactful digital solutions.</p>
+          </motion.div>
          
                 </div>
                 <Fade cascade>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-5 mr-3 ml-3 mt-16 max-md:max-w-lg mx-auto">
                         {/* Repeat this div for each project */}
+                        <Fade cascade>
                         <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
                             <div className="relative w-full h-60 overflow-hidden">
                                 <img
@@ -45,18 +67,20 @@ const MyWorks = () => {
                                 <h1 className="font-bold">GitHub & Project Link:</h1>
                                 <div className="flex justify-center lg:justify-between gap-2 mt-3">
                                     <button type="button" className="bg-white py-2.5 px-3 md:px-4 lg:px-5 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-                                        <a href="https://github.com/nazmul6548/homezen-" target="_blank" className="no-underline text-black">Client Side</a>
+                                        <a href="https://github.com/nazmul6548/homezen-" target="_blank" className="no-underline text-black text-xs md:text-sm">Client Side</a>
                                     </button>
                                     <button type="button" className="bg-white py-2.5 px-3  min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-                                        <a href="https://github.com/nazmul6548/homezen-server-side" target="_blank" className="no-underline text-black">Server Side</a>
+                                        <a href="https://github.com/nazmul6548/homezen-server-side" target="_blank" className="no-underline text-black text-xs md:text-sm">Server Side</a>
                                     </button>
                                     <button type="button" className="bg-white py-2.5 px-3 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-                                        <a href="https://real-estate-platform-b620c.web.app" target="_blank" className="no-underline text-black">Live Link</a>
+                                        <a href="https://real-estate-platform-b620c.web.app" target="_blank" className="no-underline text-black text-xs md:text-sm">Live Link</a>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                        </Fade>
                         {/*  */}
+                        <Fade cascade>
                         <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300 animate-riseFall delay-225">
         {/* <img src="" alt="Blog Post 1" className="w-full h-60 object-cover" /> */}
         <div className="relative w-full h-60 overflow-hidden">
@@ -89,19 +113,21 @@ const MyWorks = () => {
           <h1 className="font-bold ">Github & Project Link :</h1>
           <div className="flex justify-center lg:justify-between gap-2 mt-3">
   <button type="button" className="bg-white py-2.5 px-3 md:px-4 lg:px-5 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-    <a href="https://github.com/nazmul6548/creative-craft-client-side" target="_blank" className="no-underline text-black">Client Side</a>
+    <a href="https://github.com/nazmul6548/creative-craft-client-side" target="_blank" className="no-underline text-black text-xs md:text-sm">Client Side</a>
   </button>
   <button type="button" className="bg-white py-2.5 px-3 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-    <a href="https://github.com/nazmul6548/creative-craft-server-side-" target="_blank" className="no-underline text-black">Server Side</a>
+    <a href="https://github.com/nazmul6548/creative-craft-server-side-" target="_blank" className="no-underline text-black text-xs md:text-sm">Server Side</a>
   </button>
   <button type="button" className="bg-white py-2.5 px-3 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-    <a href="https://assignment-10-art.web.app/" target="_blank" className="no-underline text-black">Live Link</a>
+    <a href="https://assignment-10-art.web.app/" target="_blank" className="no-underline text-black text-xs md:text-sm">Live Link</a>
   </button>
 </div>
 
         </div>
       </div>
+      </Fade>
                         {/* Repeat div ends here */}
+                        <Fade cascade>
                         <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300 ">
         {/* <img src="https://i.ibb.co/ZSP4P3y/JobHub-n.png" alt="Blog Post 1" className="w-full h-60 object-cover" /> */}
         <div className="relative w-full h-60 overflow-hidden">
@@ -132,18 +158,19 @@ const MyWorks = () => {
           <h1 className="font-bold ">Github & Project Link :</h1>
           <div className="flex justify-center lg:justify-between gap-2 mt-3">
   <button type="button" className="bg-white py-2.5 px-3 md:px-4 lg:px-5 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-    <a href="https://github.com/nazmul6548/jobhub-client-side" target="_blank" className="no-underline text-black">Client Side</a>
+    <a href="https://github.com/nazmul6548/jobhub-client-side" target="_blank" className="no-underline text-black text-xs md:text-sm">Client Side</a>
   </button>
   <button type="button" className="bg-white py-2.5 px-3 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full text-black text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-    <a href="https://github.com/nazmul6548/jobhub-server-side" target="_blank" className="no-underline text-black">Server Side</a>
+    <a href="https://github.com/nazmul6548/jobhub-server-side" target="_blank" className="no-underline text-black text-xs md:text-sm">Server Side</a>
   </button>
   <button type="button" className="bg-white text-white py-2.5 px-3 min-w-[90px] md:min-w-[120px] shadow-xl shadow-purple-200 rounded-full  text-sm tracking-wider font-medium outline-none border border-purple-600 active:shadow-inner">
-    <a href="https://jobquesthub-60260.web.app/" target="_blank" className="no-underline text-black">Live Link</a>
+    <a href="https://jobquesthub-60260.web.app/" target="_blank" className="no-underline text-black text-xs md:text-sm">Live Link</a>
   </button>
 </div>
 
         </div>
       </div>
+      </Fade>
                         {/*  */}
                     </div>
                 </Fade>
