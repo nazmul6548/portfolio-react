@@ -45,7 +45,7 @@ const Header = () => {
 </h1>
 
 
-                  <p className="md:mt-3 text-justify text-xs md:text-sm text-white dark:text-gray-400">
+                  <p className="mt-2 md:mt-4 text-justify text-xs md:text-sm text-white dark:text-gray-400">
                     I am a passionate web developer. Over the past eight months,
                     I have been dedicated to honing my skills in web
                     development, focusing on both frontend and backend

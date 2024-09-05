@@ -15,7 +15,7 @@
     overflow: hidden;
     border-right: 4px solid;
     width: 0;
-    animation: typing 5.5s steps(40, end), blink 0.75s step-end infinite;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
   }
   
   /* Typing effect */
