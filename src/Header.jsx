@@ -22,7 +22,7 @@ const Header = () => {
           </nav>
           <Fade cascade>
           <div className="container px-6 py-16 mx-auto">
-            <div className="pt-20 items-center lg:flex">
+            <div className="pt-10 md:pt-20 items-center lg:flex">
               <div className="w-full lg:w-1/2">
                 <div className=" mt-5 md:ml-10 lg:max-w-lg">
                  
@@ -73,17 +73,9 @@ const Header = () => {
               
 
 
-              {/* <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 object-cover">
-  <div className="relative rounded-full w-[350px] h-[350px] flex items-center justify-center overflow-hidden border-8 border-transparent animate-rotateBorder object-cover">
-    <img
-      className="w-full h-full rounded-full object-cover"
-      src="https://i.ibb.co/KGk3k5r/Whats-App-Image-2024-06-19-at-3-35-54-PM-removebg.png"
-      alt="Catalogue-pana.svg"
-    />
-  </div>
-</div> */}
+             
 <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 object-cover">
-  <div className="relative rounded-full w-[350px] h-[350px] flex items-center justify-center overflow-hidden border-8 border-transparent animate-rotateBorder shadow-animate">
+  <div className="relative rounded-full w-[300px] md:w-[350px] h-[300px] md:h-[350px] flex items-center justify-center overflow-hidden border-8 border-transparent animate-rotateBorder shadow-animate">
     <img
       className="w-full h-full rounded-full object-cover"
       src="https://i.ibb.co/KGk3k5r/Whats-App-Image-2024-06-19-at-3-35-54-PM-removebg.png"

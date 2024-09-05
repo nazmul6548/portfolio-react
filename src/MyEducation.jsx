@@ -11,6 +11,8 @@ const MyEducation = () => {
 My Education
 <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
 </h2>
+<p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/5 md:m-auto">I am currently advancing my studies with a Master’s degree, following the completion of my Bachelor’s in Social Sciences. My educational background includes a strong foundation in Science from my earlier academic years, which has fostered my analytical and problem-solving abilities.</p>
+          {/* </div> */}
 </div>
 <Fade cascade >
 {/* <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-white text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative after:absolute after:w-6/6 after:h-1 after:left-0 after:right-0 after:-bottom-4 after:mx-auto after:bg-pink-400 after:rounded-full text-center">My Recent Works</h2> */}

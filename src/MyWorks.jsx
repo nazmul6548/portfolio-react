@@ -12,9 +12,11 @@ const MyWorks = () => {
                         My Recent Works
                         <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
                     </h2>
+                    <p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/4 md:m-auto">My portfolio highlights a range of innovative projects, each demonstrating my skills in web development and design. From creating interactive user interfaces to building robust applications, my work reflects a dedication to quality and functionality. Explore these projects to see how I transform concepts into impactful digital solutions.</p>
+         
                 </div>
                 <Fade cascade>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-md:max-w-lg mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-5 mr-3 ml-3 mt-16 max-md:max-w-lg mx-auto">
                         {/* Repeat this div for each project */}
                         <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
                             <div className="relative w-full h-60 overflow-hidden">

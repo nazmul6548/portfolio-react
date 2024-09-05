@@ -1,0 +1,31 @@
+
+  .typewriter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d0e35; 
+    font-family: 'Courier', monospace; 
+  }
+  
+  .typewriter-text {
+    color: #ffffff;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    width: 0;
+    animation: typing 5.5s steps(40, end), blink 0.75s step-end infinite;
+  }
+  
+  /* Typing effect */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Cursor blinking effect */
+  @keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: white; }
+  }

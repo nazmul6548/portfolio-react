@@ -51,15 +51,28 @@
     margin-top: 20px;
   }
   
-  /* .append-buttons button {
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid #007aff;
-    color: #007aff;
-    text-decoration: none;
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin: 0 10px;
-    font-size: 13px;
-  } */
+  
+.custom-tooltip {
+    background-color: #ffff !important; 
+    color: #000000 !important; 
+    padding: 10px !important; 
+    border-radius: 8px !important; 
+    width: 100px; 
+    text-wrap: wrap !important;
+    text-align: justify center;
+    height: auto;  
+    max-height: 150px; 
+    word-wrap: break-word; 
+    text-align: center; 
+   
+  }
+  .swiper-slide img {
+    transition: transform 0.3s ease;
+  }
+  
+  .swiper-slide:hover img {
+    transform: scale(1.1);
+  }
+  
+  
   
