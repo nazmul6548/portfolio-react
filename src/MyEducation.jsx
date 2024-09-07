@@ -25,6 +25,7 @@ const MyEducation = () => {
             My Education
             <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
           </h2>
+          
 
           {/* Framer Motion Paragraph */}
           <motion.div
@@ -38,7 +39,13 @@ const MyEducation = () => {
             </p>
           </motion.div>
           
-
+          <div className="w-[160px] h-[140px] flex justify-center items-center m-auto">
+  <img
+    src="https://i.ibb.co/qFfsDN7/Animation-1725603013574-2.gif"
+    alt=""
+    className="w-full h-full"
+  />
+</div>
         </div>
 
         {/* react-awesome-reveal Fade for Education Cards */}

@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
           <Fade cascade>
             <footer className="bg-primary-gradient py-12 px-6 font-sans tracking-wide">
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 ">
 
         <ul className="flex flex-wrap justify-center gap-x-7 gap-4">
           <li><a  className="text-xl hover:text-gray-400">
@@ -42,6 +42,7 @@ const Footer = () => {
               <path fill="#fff" d="m680.617 557.98 262.632-305.288h-62.235L652.97 517.77 470.833 252.692H260.759l275.427 400.844-275.427 320.142h62.239l240.82-279.931 192.35 279.931h210.074L680.601 557.98zM345.423 299.545h95.595l440.024 629.411h-95.595z" data-original="#ffffff" />
             </svg></a></li>
         </ul>
+        
 
         <hr className="border-gray-500 w-full" />
 

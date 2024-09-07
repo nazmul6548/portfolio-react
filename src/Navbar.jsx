@@ -3,7 +3,10 @@ import { Fade } from "react-awesome-reveal";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar z-30 bg-primary-gradient  text-white fixed opacity-100">
+      <div 
+      
+      className="navbar z-30 fixed top-0 w-full  backdrop-blur-lg border border-white/30 text-white"
+       >
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +43,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl">
+          <a className="btn btn-ghost text-3xl ml-10 md:ml-0">
             <img
               src="https://i.ibb.co/ckDV1R5/Nazmul-origin-preview.png"
               alt="logo"
@@ -71,12 +74,12 @@ const Navbar = () => {
 
         <div className="navbar-end">
           <div className="font-[sans-serif] space-x-4 space-y-4 text-center">
-            <button
-              type="button"
-              className="px-5  font-semibold py-2.5 rounded-lg text-white text-sm tracking-wider outline-none bg-gradient-to-tl from-[#2A1454] to-[#9479c3] hover:from-[#3B1A78] hover:to-[#B090D7] transition-all duration-300 ease-in-out"
-            >
-              <a href="#contact">Hire Me</a>
-            </button>
+           
+<button className="relative px-5 font-semibold py-2.5 rounded-lg text-white text-sm tracking-wider bg-gradient-to-tl from-[#2A1454] to-[#9479c3] hover:from-[#3B1A78] hover:to-[#B090D7] transition-all duration-500 ease-in-out hover:pr-12 cursor-pointer">
+  <span className="relative inline-block transition-all duration-500 after:content-['»'] after:absolute after:opacity-0 after:right-[-30px] after:transition-all after:duration-500 hover:after:opacity-100 hover:after:right-15"><a href="#contact">Hire Me</a></span>
+</button>
+
+
           </div>
         </div>
       </div>

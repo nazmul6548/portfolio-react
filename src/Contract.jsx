@@ -68,6 +68,13 @@ const paragraphVariants = {
             <div className="pt-6 max-w-7xl max-lg:max-w-3xl mx-auto  ">
     <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
         <div>
+        <div className="w-[160px] h-[160px] ">
+  <img
+    src="https://i.ibb.co/b2vgf5J/Animation-1725604899796.gif"
+    alt=""
+    className="w-full h-full"
+  />
+</div>
             <h1 className="text-4xl font-bold text-white">Contact With Me</h1>
             <motion.div
             ref={ref}
