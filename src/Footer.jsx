@@ -47,9 +47,9 @@ const Footer = () => {
         <hr className="border-gray-500 w-full" />
 
         <ul className="flex flex-wrap gap-x-7 gap-4">
-          <li><a href="#projects" className="hover:underline text-gray-200 text-base transition-all">Projects</a></li>
-          <li><a href="#skills" className="hover:underline text-gray-200 text-base transition-all">Skills</a></li>
-          <li><a href="#contact" className="hover:underline text-gray-200 text-base transition-all">Contact</a></li>
+          <li><a href="#projects" className="hover:underline text-gray-200 text-base transition-all poppins-extralight">Projects</a></li>
+          <li><a href="#skills" className="hover:underline text-gray-200 text-base transition-all poppins-extralight">Skills</a></li>
+          <li><a href="#contact" className="hover:underline text-gray-200 text-base transition-all poppins-extralight">Contact</a></li>
         </ul>
         </div>
         </footer>

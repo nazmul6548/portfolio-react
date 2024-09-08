@@ -21,7 +21,7 @@ const MyEducation = () => {
       <div className="bg-primary-gradient pt-20 px-4 pb-20 font-sans-serif text-[#333]">
         <div className="text-center relative">
 
-          <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold inline-block relative">
+          <h2 className="merriweather-regular text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold inline-block relative">
             My Education
             <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
           </h2>
@@ -34,7 +34,7 @@ const MyEducation = () => {
             animate={isInView ? "visible" : "hidden"}
             variants={paragraphVariants}
           >
-            <p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center mr-4 ml-4 md:w-3/5 md:m-auto">
+            <p className="poppins-extralight  text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center mr-4 ml-4 md:w-3/5 md:m-auto">
               I am currently advancing my studies with a Master’s degree, following the completion of my Bachelor’s in Social Sciences. My educational background includes a strong foundation in Science from my earlier academic years, which has fostered my analytical and problem-solving abilities.
             </p>
           </motion.div>
@@ -62,9 +62,9 @@ const MyEducation = () => {
                 className="bg-[#1e1034] hover:bg-primary-gradient text-white flex gap-6 max-lg:flex-col rounded-2xl md:p-8 p-6 shadow-[0_-4px_24px_-8px_rgba(0,0,0,0.2)] transition-all duration-500 ease-in-out"
               >
                 <div>
-                  <p className="text-[#9b6ef8] text-xl font-bold">{item.year}</p>
-                  <h1 className="font-bold text-3xl">{item.title}</h1>
-                  <p className="text-sm mt-2">{item.school}</p>
+                  <p className="text-[#9b6ef8] text-xl font-bold poppins-extralight">{item.year}</p>
+                  <h1 className="font-bold text-3xl merriweather-regular">{item.title}</h1>
+                  <p className="text-sm mt-2 poppins-extralight">{item.school}</p>
                 </div>
               </div>
             ))}

@@ -75,29 +75,29 @@ const paragraphVariants = {
     className="w-full h-full"
   />
 </div>
-            <h1 className="text-4xl font-bold text-white">Contact With Me</h1>
+            <h1 className="merriweather-regular text-4xl font-bold text-white">Contact With Me</h1>
             <motion.div
             ref={ref}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={paragraphVariants}
           >
-            <p className="text-sm text-gray-300 mt-4 leading-relaxed">I am a front-end web developer. You can contact me for hiring and other inquiries. My contact information is provided below.</p>
+            <p className="text-sm text-gray-300 mt-4 leading-relaxed poppins-extralight">I am a front-end web developer. You can contact me for hiring and other inquiries. My contact information is provided below.</p>
           </motion.div>
 
             <ul className="mt-12 space-y-8">
                 <li className="flex items-center">
-                <p className="text-white"><MdMarkEmailRead /></p><a  className="text-white text-sm ml-4">
+                <p className="text-white"><MdMarkEmailRead /></p><a  className="poppins-extralight text-white text-sm ml-4">
                     nazmul.islam.juwel9@gmail.com
                     </a>
                 </li>
                 <li className="flex items-center">
-                <p className="text-white"><FaMobileScreen /></p><a  className="text-white text-sm ml-4">
+                <p className="text-white"><FaMobileScreen /></p><a  className="poppins-extralight text-white text-sm ml-4">
                     +880-1859336548
                     </a>
                 </li>
                 <li className="flex items-center">
-                <p className="text-white"><FaLocationArrow /></p><a  className="text-white text-sm ml-4">
+                <p className="text-white"><FaLocationArrow /></p><a  className="poppins-extralight text-white text-sm ml-4">
                     Chattagram,Bangladesh
                     </a>
                 </li>
@@ -126,15 +126,15 @@ const paragraphVariants = {
         </div>
 
         <div className="bg-gray-100 p-6 rounded-lg">
-            <p className="text-sm font-semibold text-gray-800">I'm interested in...</p>
+            <p className="text-sm font-semibold text-gray-800 poppins-extralight">I'm interested in...</p>
 
             <div className="space-y-4 max-lg:mt-4">
-                <button type="button" className="px-4 py-2 mt-3 rounded-lg bg-[#a91079] text-white text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4">Web development</button>
+                <button type="button" className="px-4 py-2 mt-3 rounded-lg bg-[#a91079] text-white text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4 poppins-extralight">Web development</button>
                 
                 
             </div>
 
-            <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-4">
+            <form ref={form} onSubmit={sendEmail} className="poppins-extralight mt-8 space-y-4">
               <input type="text"
                                   
                                 name="name" required placeholder="Name" className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]" />
@@ -147,7 +147,7 @@ const paragraphVariants = {
               <textarea placeholder="Message" name="message"
               
               rows="6" className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-[#a91079]"></textarea>
-              <button type="submit" className="text-white bg-[#a91079] hover:bg-[#a91079e2] tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full mt-6">
+              <button type="submit" className="poppins-extralight text-white bg-[#a91079] hover:bg-[#a91079e2] tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full mt-6">
                 Send Email
               </button>
             </form>

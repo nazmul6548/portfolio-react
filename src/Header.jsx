@@ -36,9 +36,9 @@ const Header = () => {
             <div className="pt-10 md:pt-20 items-center lg:flex">
               <div className="w-full lg:w-1/2">
                 <div className=" mt-5 md:ml-10 lg:max-w-lg">
-                  <h1 className="text-2xl md:text-3xl font-semibold text-white dark:text-white lg:text-4xl">
+                  <h1 className="text-2xl merriweather-regular  md:text-3xl font-semibold text-white dark:text-white lg:text-4xl">
                     Hello, I'am <br />
-                    <span className="relative md:mt-3 inline-block bg-gradient-to-r from-[#8750f7] to-[#a91079] bg-clip-text text-transparent">
+                    <span className="relative merriweather-regular  md:mt-3 inline-block bg-gradient-to-r from-[#8750f7] to-[#a91079] bg-clip-text text-transparent">
                       <Typewriter
                         options={{
                           strings: ["NaZMuL ISLAM JuWeL"],
@@ -60,7 +60,7 @@ const Header = () => {
                     animate={isInView ? "visible" : "hidden"}
                     variants={paragraphVariants}
                   >
-                    <p className="mt-2 md:mt-4 text-justify text-xs md:text-sm text-white dark:text-gray-400">
+                    <p className="poppins-extralight  mt-2 md:mt-4 text-justify text-xs md:text-sm text-gray-100 dark:text-gray-400">
                       I am a passionate web developer. Over the past eight
                       months, I have been dedicated to honing my skills in web
                       development, focusing on both frontend and backend
@@ -76,7 +76,7 @@ const Header = () => {
                     href="https://drive.google.com/file/d/1CSsuUrEh5i38u7ttUo1c4symiDefP_bs/view"
                     target="_blank"
                     download="NaZMuL_ISLAM_JuWeL_Resume.pdf"
-                    className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-lg lg:w-auto hover:bg-[#27124d] focus:outline-none focus:bg-blue-500 flex justify-center items-center gap-2"
+                    className="poppins-extralight w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-lg lg:w-auto hover:bg-[#27124d] focus:outline-none focus:bg-blue-500 flex justify-center items-center gap-2"
                   >
                     Resume
                     <FiDownload />

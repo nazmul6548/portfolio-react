@@ -28,8 +28,8 @@ const StateCount = () => {
             variants={paragraphVariants}
           >
             <div className="text-center">
-      <h3 className="text-4xl font-extrabold text-white">01<span className="text-[#a91079]">Y+</span></h3>
-      <p className="text-gray-500 font-semibold mt-3">Experience</p>
+      <h3 className="text-4xl font-extrabold text-white poppins-extralight">01<span className="text-[#a91079]">Y+</span></h3>
+      <p className="poppins-extralight text-gray-500 font-semibold mt-3">Experience</p>
     </div>
           </motion.div>
           <motion.div
@@ -39,8 +39,8 @@ const StateCount = () => {
             variants={paragraphVariants}
           >
            <div className="text-center">
-      <h3 className="text-4xl font-extrabold text-white">13<span className="text-[#a91079]">+</span></h3>
-      <p className="text-gray-500 font-semibold mt-3">Projects</p>
+      <h3 className="poppins-extralight text-4xl font-extrabold text-white">13<span className="text-[#a91079]">+</span></h3>
+      <p className="poppins-extralight text-gray-500 font-semibold mt-3">Projects</p>
     </div>
           </motion.div>
           <motion.div
@@ -50,8 +50,8 @@ const StateCount = () => {
             variants={paragraphVariants}
           >
             <div className="text-center">
-      <h3 className="text-4xl font-extrabold text-white">03<span className="text-[#a91079]">+</span></h3>
-      <p className="text-gray-500 font-semibold mt-3">MERN Projects</p>
+      <h3 className="poppins-extralight text-4xl font-extrabold text-white">03<span className="text-[#a91079]">+</span></h3>
+      <p className="poppins-extralight text-gray-500 font-semibold mt-3">MERN Projects</p>
     </div>
           </motion.div>
           <motion.div
@@ -61,8 +61,8 @@ const StateCount = () => {
             variants={paragraphVariants}
           >
             <div className="text-center">
-      <h3 className="text-4xl font-extrabold text-white">11<span className="text-[#a91079]">+</span></h3>
-      <p className="text-gray-500 font-semibold mt-3">Tailwind projects</p>
+      <h3 className="poppins-extralight text-4xl font-extrabold text-white">11<span className="text-[#a91079]">+</span></h3>
+      <p className="poppins-extralight text-gray-500 font-semibold mt-3">Tailwind projects</p>
     </div>
           </motion.div>
   </div>

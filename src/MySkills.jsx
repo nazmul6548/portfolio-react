@@ -144,7 +144,7 @@ const MySkills = () => {
       <div className="font-[sans-serif] bg-[#1d0e35]">
         <div className="max-w-7xl mx-auto py-16">
           <div className="text-center relative">
-            <h2 className="text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
+            <h2 className="merriweather-regular  text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
               My Skills
               <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
             </h2>
@@ -156,7 +156,7 @@ const MySkills = () => {
             animate={isInView ? "visible" : "hidden"}
             variants={paragraphVariants}
           >
-            <p className="text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/4 md:m-auto">
+            <p className="poppins-extralight text-xs md:text-sm text-white pt-6 md:pt-10 text-justify md:text-center   mr-4 ml-4 md:w-3/4 md:m-auto">
               I’m dedicated to crafting exceptional web experiences, blending
               creativity with technical expertise. My skills span HTML, CSS, and
               JavaScript, along with cutting-edge frameworks like React.js. I
@@ -223,7 +223,7 @@ const MySkills = () => {
                         className="object-contain w-full h-full"
                       />
                     </div>
-                    <h3 className="text-xl font-bold">{slideContent.title}</h3>
+                    <h3 className="text-xl font-bold poppins-extralight">{slideContent.title}</h3>
                   </div>
                   </Fade>
 

@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         <Fade cascade>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 font-semibold text-gradient-to-r from-[#8750f7] to-[#a91079]">
+            <ul className=" poppins-extralight menu menu-horizontal px-1 font-semibold text-gradient-to-r from-[#8750f7] to-[#a91079]">
               <li>
                 <a href="#skills">Skills</a>
               </li>
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="font-[sans-serif] space-x-4 space-y-4 text-center">
            
 <button className="relative px-5 font-semibold py-2.5 rounded-lg text-white text-sm tracking-wider bg-gradient-to-tl from-[#2A1454] to-[#9479c3] hover:from-[#3B1A78] hover:to-[#B090D7] transition-all duration-500 ease-in-out hover:pr-12 cursor-pointer">
-  <span className="relative inline-block transition-all duration-500 after:content-['»'] after:absolute after:opacity-0 after:right-[-30px] after:transition-all after:duration-500 hover:after:opacity-100 hover:after:right-15"><a href="#contact">Hire Me</a></span>
+  <span className="relative inline-block transition-all duration-500 after:content-['»'] after:absolute after:opacity-0 after:right-[-30px] after:transition-all after:duration-500 hover:after:opacity-100 hover:after:right-15 poppins-extralight"><a href="#contact">Hire Me</a></span>
 </button>
 
 
