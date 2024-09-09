@@ -21,7 +21,7 @@ const MyEducation = () => {
       <div className="bg-primary-gradient pt-20 px-4 pb-20 font-sans-serif text-[#333]">
         <div className="text-center relative">
 
-          <h2 className="merriweather-regular text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold inline-block relative">
+          <h2 className="merriweather-regular text-3xl md:text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold inline-block relative">
             My Education
             <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
           </h2>
@@ -63,7 +63,7 @@ const MyEducation = () => {
               >
                 <div>
                   <p className="text-[#9b6ef8] text-xl font-bold poppins-extralight">{item.year}</p>
-                  <h1 className="font-bold text-3xl merriweather-regular">{item.title}</h1>
+                  <h1 className="font-bold text-2xl md:text-3xl merriweather-regular">{item.title}</h1>
                   <p className="text-sm mt-2 poppins-extralight">{item.school}</p>
                 </div>
               </div>

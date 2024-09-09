@@ -144,7 +144,7 @@ const MySkills = () => {
       <div className="font-[sans-serif] bg-[#1d0e35]">
         <div className="max-w-7xl mx-auto py-16">
           <div className="text-center relative">
-            <h2 className="merriweather-regular  text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
+            <h2 className="merriweather-regular text-3xl md:text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
               My Skills
               <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
             </h2>
@@ -225,6 +225,10 @@ const MySkills = () => {
                     </div>
                     <h3 className="text-xl font-bold poppins-extralight">{slideContent.title}</h3>
                   </div>
+                
+
+
+
                   </Fade>
 
                   <ReactTooltip

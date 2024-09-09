@@ -22,7 +22,7 @@ const MyWorks = () => {
         <div id="projects" className="bg-primary-gradient font-sans pt-20">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center relative">
-                    <h2 className="merriweather-regular  text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
+                    <h2 className="merriweather-regular text-3xl md:text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
                         My Recent Works
                         <span className="absolute left-0 right-0 bottom-[-10px] h-1 bg-gradient-to-r from-[#8750f7] to-[#a91079] rounded-full md:animate-slideUnderline"></span>
                     </h2>
@@ -61,8 +61,8 @@ const MyWorks = () => {
             <li className="text-gray-400 text-sm poppins-extralight">Admin Management: Admins can add and manage users, guests, and agents, ensuring a streamlined workflow.</li>
             <li className="text-gray-400 text-sm poppins-extralight">Property Approval: Agents can add properties, which require admin approval before being listed on the home page.</li>
                                 <hr className="my-3" />
-                                <h1 className="font-bold">Technologies:</h1>
-                                <p className="text-gray-400 text-sm">Stripe, Tanstack Query, MongoDB, React.js, JWT, Axios</p>
+                                <h1 className="font-bold poppins-extralight">Technologies:</h1>
+                                <p className="text-gray-400 text-sm poppins-extralight">Stripe, TanStack Query, MongoDB, React.js, JWT, Axios</p>
                                 <hr className="my-3" />
                                 <h1 className="font-bold poppins-extralight">GitHub & Project Link:</h1>
                                 <div className="flex justify-center lg:justify-between gap-2 mt-3">
@@ -107,7 +107,7 @@ const MyWorks = () => {
           <hr className="my-3" />
           <div>
             <h1 className="font-bold poppins-extralight">Technologys :</h1>
-            <p className="text-gray-400 text-sm poppins-extralight">Stripe,Tanstack Query,MongoDB,React.js,JWT,Axios</p>
+            <p className="text-gray-400 text-sm poppins-extralight">Stripe,TanStack Query,MongoDB,React.js,JWT,Axios</p>
           </div>
           <hr className="my-3" />
           <h1 className="font-bold poppins-extralight">Github & Project Link :</h1>
@@ -152,7 +152,7 @@ const MyWorks = () => {
           <hr className="my-3" />
           <div>
             <h1 className="font-bold poppins-extralight">Technologys :</h1>
-            <p className="text-gray-400 text-sm">React to pdf,Tanstack Query,MongoDB,React-tabs,React.js</p>
+            <p className="text-gray-400 text-sm poppins-extralight">React to pdf,Tanstack Query,MongoDB,React-tabs</p>
           </div>
           <hr className="my-3" />
           <h1 className="font-bold poppins-extralight">Github & Project Link :</h1>

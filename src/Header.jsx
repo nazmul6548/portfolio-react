@@ -36,7 +36,7 @@ const Header = () => {
             <div className="pt-10 md:pt-20 items-center lg:flex">
               <div className="w-full lg:w-1/2">
                 <div className=" mt-5 md:ml-10 lg:max-w-lg">
-                  <h1 className="text-2xl merriweather-regular  md:text-3xl font-semibold text-white dark:text-white lg:text-4xl">
+                  <h1 className="text-xl merriweather-regular  md:text-3xl font-semibold text-white dark:text-white lg:text-4xl">
                     Hello, I'am <br />
                     <span className="relative merriweather-regular  md:mt-3 inline-block bg-gradient-to-r from-[#8750f7] to-[#a91079] bg-clip-text text-transparent">
                       <Typewriter

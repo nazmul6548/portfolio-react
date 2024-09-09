@@ -75,7 +75,7 @@ const paragraphVariants = {
     className="w-full h-full"
   />
 </div>
-            <h1 className="merriweather-regular text-4xl font-bold text-white">Contact With Me</h1>
+            <h1 className="merriweather-regular text-3xl md:text-4xl font-bold text-white">Contact With Me</h1>
             <motion.div
             ref={ref}
             initial="hidden"
