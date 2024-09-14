@@ -11,7 +11,7 @@ import { motion, useScroll } from "framer-motion";
 import { FaArrowsRotate } from "react-icons/fa6";
 import TypewriterLoader from "./TypewriterLoader";
 import { useState } from "react";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 
 
@@ -41,7 +41,7 @@ function App() {
           <MyEducation />
           <Contract />
           <Footer />
-
+          
           {/* Scroll Progress Circle */}
           <div className="fixed  bottom-2 right-4 z-50">
             <svg className="progress-ring" width="50" height="50">
@@ -71,11 +71,7 @@ function App() {
           </div>
         </div>
       )}
-       <MessengerCustomerChat
-    pageId="415357314995315"
-    appId="954681533092370"
-    htmlRef="<REF_STRING>"
-  />,
+       
     </>
   );
 }
