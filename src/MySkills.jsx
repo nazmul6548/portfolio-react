@@ -211,18 +211,20 @@ const MySkills = () => {
                 <SwiperSlide key={index} virtualIndex={index}>
                   <Fade cascade>
                   <div
-                    className="p-6 bg-white rounded-tr-[90px] shadow-lg text-center w-[200px] h-[200px] hover:bg-purple-100 relative bottom-6 left-0 right-0"
+                    className="p-6 outer border bg-white rounded-tr-[90px] shadow-lg text-center w-[200px] h-[200px] hover:bg-purple-100 relative bottom-6 left-0 right-0 group"
                       
                     data-tooltip-id={`tooltip-${index}`}
                     data-tooltip-content={slideContent.description}
                   >
-                    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4">
+                     <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4">
                       <img
                         src={slideContent.imgSrc}
                         alt={slideContent.title}
                         className="object-contain w-full h-full"
                       />
                     </div>
+  
+ 
                     <h3 className="text-xl font-bold poppins-extralight">{slideContent.title}</h3>
                   </div>
                 
