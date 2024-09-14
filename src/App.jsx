@@ -28,11 +28,7 @@ function App() {
 
   return (
     <>
-         <MessengerCustomerChat
-    pageId="415357314995315"
-    appId="954681533092370"
-    htmlRef="<REF_STRING>"
-  />,
+        
       {!showContent && <TypewriterLoader onComplete={handleLoaderComplete} />}
       {showContent && (
         <div className="bg-primary-gradient h-screen">
@@ -75,7 +71,11 @@ function App() {
           </div>
         </div>
       )}
-      
+       <MessengerCustomerChat
+    pageId="415357314995315"
+    appId="954681533092370"
+    htmlRef="<REF_STRING>"
+  />,
     </>
   );
 }
