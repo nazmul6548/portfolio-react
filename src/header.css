@@ -1,21 +1,12 @@
-/* @keyframes rotateBorder {
-    0% {
-      border-color: #8750f7;
-    }
-    50% {
-      border-color: #a91079;
-    }
-    100% {
-      border-color: #8750f7;
-    }
-  }
-  
-  .animate-rotateBorder {
-    animation: rotateBorder 5s infinite linear;
-  }
-   */
+.custom-border {
+  border-width: 0 3px; /* Left and right borders */
+  border-style: solid;
+  border-image: 
+    linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  padding-left: 1rem; /* Add padding on the left */
+  padding-right: 1rem; /* Add padding on the right */
+}
 
-/* Border Animation */
 @keyframes rotateBorder {
     0% {
       border-color: #8750f7;

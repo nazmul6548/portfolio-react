@@ -28,7 +28,7 @@ const StateCount = () => {
             variants={paragraphVariants}
           >
             <div className="text-center">
-      <h3 className="text-4xl font-extrabold text-white poppins-extralight">01<span className="text-[#a91079]">Y+</span></h3>
+      <h3 className="text-4xl font-extrabold text-white poppins-extralight ">01<span className="text-[#a91079]">Y+</span></h3>
       <p className="poppins-extralight text-gray-500 font-semibold mt-3">Experience</p>
     </div>
           </motion.div>

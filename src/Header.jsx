@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect";
 import "./header.css";
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
+import 'animate.css';
 const Header = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 });
@@ -36,7 +37,7 @@ const Header = () => {
             <div className="pt-10 md:pt-20 items-center lg:flex">
               <div className="w-full lg:w-1/2">
                 <div className=" mt-5 md:ml-10 lg:max-w-lg">
-                  <h1 className="text-xl merriweather-regular  md:text-3xl font-semibold text-white dark:text-white lg:text-4xl">
+                  <h1 className="animate__animated animate__bounce text-xl merriweather-regular  md:text-3xl font-semibold text-white dark:text-white lg:text-4xl">
                     Hello, I'am <br />
                     <span className="relative merriweather-regular  md:mt-3 inline-block bg-gradient-to-r from-[#8750f7] to-[#a91079] bg-clip-text text-transparent">
                       <Typewriter
@@ -60,16 +61,12 @@ const Header = () => {
                     animate={isInView ? "visible" : "hidden"}
                     variants={paragraphVariants}
                   >
-                    <p className="poppins-extralight  mt-2 md:mt-4 text-justify text-xs md:text-sm text-gray-100 dark:text-gray-400">
-                      I am a passionate web developer. Over the past eight
-                      months, I have been dedicated to honing my skills in web
-                      development, focusing on both frontend and backend
-                      technologies. <br />I am committed to advancing my skills
-                      and taking on new challenges in the web development field.
-                      My goal is to continuously improve and stay updated with
-                      the latest industry trends, ultimately becoming an expert
-                      in full-stack development.
-                    </p>
+                   
+                    <p className="poppins-extralight mt-2 md:mt-4 text-justify text-xs md:text-sm text-gray-100 dark:text-gray-400 custom-border">
+  I am a passionate web developer. Over the past eight months, I have been dedicated to honing my skills in web development, focusing on both frontend and backend technologies. <br />
+  I am committed to advancing my skills and taking on new challenges in the web development field. My goal is to continuously improve and stay updated with the latest industry trends, ultimately becoming an expert in full-stack development.
+</p>
+
                   </motion.div>
 
                   <a
