@@ -7,6 +7,8 @@ import "./header.css";
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import 'animate.css';
+
+
 const Header = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 });
@@ -21,8 +23,9 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <header className="bg-primary-gradient dark:bg-gray-900">
+    
+
+      <header className="bg-primary-gradient dark:bg-gray-900 z-50">
         <nav className="relative bg-white dark:bg-gray-900">
           <div className="container px-6  mx-auto md:flex md:justify-between md:items-center">
             <div className="flex items-center justify-between"></div>
@@ -91,7 +94,9 @@ const Header = () => {
                   <div className="relative rounded-full w-[300px] md:w-[350px] h-[300px] md:h-[350px] flex items-center justify-center overflow-hidden border-8 border-transparent animate-rotateBorder shadow-animate">
                     <img
                       className="w-full h-full rounded-full object-cover"
-                      src="https://i.ibb.co/KGk3k5r/Whats-App-Image-2024-06-19-at-3-35-54-PM-removebg.png"
+                     
+                      src="https://i.ibb.co.com/b12p3P9/Whats-App-Image-2024-10-19-at-6-03-43-PM.jpg"
+                      
                       alt="Catalogue-pana.svg"
                     />
                   </div>
@@ -100,10 +105,15 @@ const Header = () => {
             </div>
           </div>
         </Fade>
+        
+         
         <StateCount></StateCount>
+       
       </header>
-    </div>
+      
+      
   );
 };
 
 export default Header;
+

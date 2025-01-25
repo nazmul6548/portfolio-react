@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Contract from "./Contract";
 import Footer from "./Footer";
@@ -11,11 +10,8 @@ import { motion, useScroll } from "framer-motion";
 import { FaArrowsRotate } from "react-icons/fa6";
 import TypewriterLoader from "./TypewriterLoader";
 import { useState } from "react";
-
-
-
-
-
+import ProjectShowcase from "./ProjectShowcase";
+import ProjectShowcaseParent from "./ProjectShowcaseParent";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -28,20 +24,20 @@ function App() {
 
   return (
     <>
-        
       {!showContent && <TypewriterLoader onComplete={handleLoaderComplete} />}
       {showContent && (
         <div className="bg-primary-gradient h-screen">
-          
-
-          <Navbar />
-          <Header />
+          <div>
+            <Navbar />
+            <Header />
+          </div>
           <MySkills />
           <MyWorks />
+          <ProjectShowcaseParent></ProjectShowcaseParent>
           <MyEducation />
           <Contract />
           <Footer />
-          
+
           {/* Scroll Progress Circle */}
           <div className="fixed  bottom-2 right-4 z-50">
             <svg className="progress-ring" width="50" height="50">
@@ -71,7 +67,6 @@ function App() {
           </div>
         </div>
       )}
-       
     </>
   );
 }

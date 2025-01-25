@@ -19,7 +19,7 @@ const MyWorks = () => {
   };
 
     return (
-        <div id="projects" className="bg-primary-gradient font-sans pt-20">
+        <div id="projects" className="bg-primary-gradient font-sans pt-20 pb-20">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center relative">
                     <h2 className="merriweather-regular text-3xl md:text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold text-[#333] inline-block relative">
@@ -126,6 +126,7 @@ const MyWorks = () => {
         </div>
       </div>
       </Fade>
+      
                         {/* Repeat div ends here */}
                         <Fade cascade>
                         <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300 ">

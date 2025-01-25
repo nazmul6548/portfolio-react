@@ -31,7 +31,7 @@ const MySkills = () => {
   const swiperRef = useRef(null);
 
   const skillsData = [
-    { title: "HTML", imgSrc: "https://svgshare.com/i/1A4Q.svg", description: "The standard markup language used to create web pages." },
+    { title: "HTML", imgSrc: "", description: "The standard markup language used to create web pages." },
     { title: "CSS", imgSrc: "https://svgshare.com/i/1A3F.svg", description: "A style sheet language used for describing the presentation of a document written in HTML." },
     { title: "Tailwind CSS", imgSrc: "https://svgshare.com/i/1A3X.svg", description: "A utility-first CSS framework for building custom designs quickly." },
     { title: "JavaScript", imgSrc: "https://svgshare.com/i/1A2X.svg", description: "A programming language that allows you to implement complex things on web pages." },
@@ -39,7 +39,7 @@ const MySkills = () => {
     { title: "Node.js", imgSrc: "https://svgshare.com/i/1A3L.svg", description: "A JavaScript runtime built on Chrome's V8 JavaScript engine for server-side scripting." },
     {
             title: "MongoDB",
-            imgSrc: "https://svgshare.com/i/1A2d.svg",
+            imgSrc: "https://i.ibb.co.com/Mc9Kt5X/nextjs-svgrepo-com.jpg",
             description:
               "A NoSQL database that uses JSON-like documents to store data.",
               gradient: 'from-red-500 to-purple-600' 

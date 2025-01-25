@@ -21,7 +21,7 @@ const MyEducation = () => {
         <div className="text-center relative">
           <h2
             className={`merriweather-regular text-3xl md:text-4xl bg-gradient-to-r from-[#8750f7] to-[#a91079] text-transparent bg-clip-text font-extrabold inline-block relative ${
-              isInView ? "animate__animated animate__bounceIn" : ""
+              isInView ? "" : ""
             }`}
           >
             My Education
