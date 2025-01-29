@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'; // Import PropTypes
 
 const ProjectCard = ({ title, description, stack, link }) => {
   return (
-    <div className="max-w-7xl mx-auto group relative bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 hover:border-purple-500 hover:shadow-xl transition-all duration-300  w-[350px]  lg:[400px]">
+    <div className="max-w-7xl mx-2 sm:mx-2 md:mx-8 group relative bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 hover:border-purple-500 hover:shadow-xl transition-all duration-300 sm:[250px] md:w-[300px] lg:w-[350px]">
       
       
             <div className="p-6">
@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, stack, link }) => {
         </div>
 
         {/* Hover Details */}
-        <div className="absolute inset-0 bg-purple-500 bg-opacity-90 text-white flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-center">
+        <div className="absolute inset-0 bg-purple-500 bg-opacity-90 text-white flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300  text-center ">
        
           <p className="mb-4">Click to view more details</p>
           <a
@@ -97,24 +97,12 @@ const Portfolio = () => {
       stack: ['CSS', 'Responsive', 'HTML'],
       link: 'https://nazmul6548.github.io/html-css-practice-project-3',
     },
-    // {
-    //   title: 'Project 3',
-    //   description: 'A task management tool with robust CRUD operations.',
-    //   stack: ['Next.js', 'MongoDB', 'Express'],
-    //   link: 'https://nazmul6548.github.io/html-css-project-4',
-    // },
-    // {
-    //   title: 'Project 3',
-    //   description: 'A task management tool with robust CRUD operations.',
-    //   stack: ['Next.js', 'MongoDB', 'Express'],
-    //   link: 'https://nazmul6548.github.io/no1portfolio',
-    // },
     
 
   ];
 
   return (
-    <div className=" pt-12 max-w-7xl mx-auto p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className=" pt-12  max-w-7xl  mx-auto  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
        
       {projects.map((project, index) => (
         <ProjectCard

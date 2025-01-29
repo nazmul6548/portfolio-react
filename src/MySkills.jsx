@@ -39,7 +39,7 @@ const MySkills = () => {
     { title: "Node.js", imgSrc: "https://svgshare.com/i/1A3L.svg", description: "A JavaScript runtime built on Chrome's V8 JavaScript engine for server-side scripting." },
     {
             title: "MongoDB",
-            imgSrc: "https://i.ibb.co.com/Mc9Kt5X/nextjs-svgrepo-com.jpg",
+            imgSrc: "",
             description:
               "A NoSQL database that uses JSON-like documents to store data.",
               gradient: 'from-red-500 to-purple-600' 
@@ -77,7 +77,7 @@ const MySkills = () => {
           },
           {
             title: "Next.js",
-            imgSrc: "https://svgshare.com/i/1A4D.svg",
+            imgSrc: "",
             description:
               "A React framework that enables server-side rendering and static web applications.",
           },

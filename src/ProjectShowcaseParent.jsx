@@ -17,7 +17,7 @@ const ProjectShowcaseParent = () => {
       },
     };
     return (
-        <div className="bg-[#281350] to from-[#01003a] ">
+        <div className="bg-[#281350] to from-[#01003a] pb-16">
             
             {/* <h1 className="text-white text-4xl text-center font-bold p-4">Project Showcase</h1> */}
             <div className="text-center relative">
