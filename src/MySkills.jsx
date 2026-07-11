@@ -173,8 +173,8 @@ const MySkills = () => {
   data-tooltip-content={slideContent.title}
    
 >
-  <div className="flex-col bg-[#1d0e35] hover:bg-white text-white hover:text-black rounded-tr-[90px] shadow-lg text-center p-6 flex items-center justify-center w-full h-full">
-    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4">
+  <div className="flex-col bg-[#2a1454] hover:bg-white text-white hover:text-black rounded-tr-[90px] shadow-lg text-center p-6 flex items-center justify-center w-full h-full">
+    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-white rounded-full p-3 shadow-md">
       <img src={slideContent.imgSrc} alt={slideContent.title} className="object-contain w-full h-full" />
     </div>
     <h3 className="text-xl font-bold poppins-extralight">{slideContent.title}</h3>
