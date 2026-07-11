@@ -45,14 +45,14 @@ const MySkills = () => {
           },
           {
             title: "Express.js",
-            imgSrc: "https://api.iconify.design/logos:express.svg",
+            imgSrc: "https://api.iconify.design/simple-icons:express.svg",
             description:
               "A minimal and flexible Node.js web application framework for building APIs.",
               gradient: 'from-red-500 to-purple-600' 
           },
           {
             title: "Firebase",
-            imgSrc: "https://api.iconify.design/logos:firebase.svg",
+            imgSrc: "https://api.iconify.design/logos:firebase-icon.svg",
             description:
               "A platform developed by Google for creating mobile and web applications with integrated cloud services.",
           },
@@ -82,7 +82,7 @@ const MySkills = () => {
           },
           {
             title: "Stripe",
-            imgSrc: "https://api.iconify.design/logos:stripe.svg",
+            imgSrc: "https://api.iconify.design/simple-icons:stripe.svg?color=%23635BFF",
             description:
               "An online payment processing platform for internet businesses.",
           },
@@ -100,7 +100,7 @@ const MySkills = () => {
           },
           {
             title: "Canva",
-            imgSrc: "https://api.iconify.design/logos:canva.svg",
+           imgSrc: "https://api.iconify.design/simple-icons:canva.svg?color=%2300C4CC",
             description:
               "A graphic design platform that allows users to create social media graphics, presentations, and other visual content.",
           },
