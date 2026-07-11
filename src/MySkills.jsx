@@ -1,4 +1,3 @@
-
 import { useRef, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { Autoplay, Virtual, Navigation, Pagination } from "swiper/modules";
@@ -31,83 +30,83 @@ const MySkills = () => {
   const swiperRef = useRef(null);
 
   const skillsData = [
-    { title: "HTML", imgSrc: "", description: "The standard markup language used to create web pages." },
-    { title: "CSS", imgSrc: "https://svgshare.com/i/1A3F.svg", description: "A style sheet language used for describing the presentation of a document written in HTML." },
-    { title: "Tailwind CSS", imgSrc: "https://svgshare.com/i/1A3X.svg", description: "A utility-first CSS framework for building custom designs quickly." },
-    { title: "JavaScript", imgSrc: "https://svgshare.com/i/1A2X.svg", description: "A programming language that allows you to implement complex things on web pages." },
-    { title: "React", imgSrc: "https://svgshare.com/i/1A1z.svg", description: "A JavaScript library for building user interfaces, especially for single-page applications." },
-    { title: "Node.js", imgSrc: "https://svgshare.com/i/1A3L.svg", description: "A JavaScript runtime built on Chrome's V8 JavaScript engine for server-side scripting." },
+    { title: "HTML", imgSrc: "https://api.iconify.design/logos:html-5.svg", description: "The standard markup language used to create web pages." },
+    { title: "CSS", imgSrc: "https://api.iconify.design/logos:css-3.svg", description: "A style sheet language used for describing the presentation of a document written in HTML." },
+    { title: "Tailwind CSS", imgSrc: "https://api.iconify.design/logos:tailwindcss-icon.svg", description: "A utility-first CSS framework for building custom designs quickly." },
+    { title: "JavaScript", imgSrc: "https://api.iconify.design/logos:javascript.svg", description: "A programming language that allows you to implement complex things on web pages." },
+    { title: "React", imgSrc: "https://api.iconify.design/logos:react.svg", description: "A JavaScript library for building user interfaces, especially for single-page applications." },
+    { title: "Node.js", imgSrc: "https://api.iconify.design/logos:nodejs-icon.svg", description: "A JavaScript runtime built on Chrome's V8 JavaScript engine for server-side scripting." },
     {
             title: "MongoDB",
-            imgSrc: "",
+            imgSrc: "https://api.iconify.design/logos:mongodb-icon.svg",
             description:
               "A NoSQL database that uses JSON-like documents to store data.",
               gradient: 'from-red-500 to-purple-600' 
           },
           {
             title: "Express.js",
-            imgSrc: "https://svgshare.com/i/1A3u.svg",
+            imgSrc: "https://api.iconify.design/logos:express.svg",
             description:
               "A minimal and flexible Node.js web application framework for building APIs.",
               gradient: 'from-red-500 to-purple-600' 
           },
           {
             title: "Firebase",
-            imgSrc: "https://svgshare.com/i/1A20.svg",
+            imgSrc: "https://api.iconify.design/logos:firebase.svg",
             description:
               "A platform developed by Google for creating mobile and web applications with integrated cloud services.",
           },
           {
             title: "VS Code",
-            imgSrc: "https://svgshare.com/i/1A0u.svg",
+            imgSrc: "https://api.iconify.design/logos:visual-studio-code.svg",
             description:
               "A source-code editor developed by Microsoft for Windows, macOS, and Linux.",
           },
           {
             title: "Git",
-            imgSrc: "https://svgshare.com/i/1A1p.svg",
+            imgSrc: "https://api.iconify.design/logos:git-icon.svg",
             description:
               "A distributed version control system for tracking changes in source code.",
           },
           {
             title: "GitHub",
-            imgSrc: "https://svgshare.com/i/1A2u.svg",
+            imgSrc: "https://api.iconify.design/logos:github-icon.svg",
             description:
               "A web-based interface that uses Git for version control, allowing developers to collaborate on projects.",
           },
           {
             title: "Next.js",
-            imgSrc: "",
+            imgSrc: "https://api.iconify.design/logos:nextjs-icon.svg",
             description:
               "A React framework that enables server-side rendering and static web applications.",
           },
           {
             title: "Stripe",
-            imgSrc: "https://svgshare.com/i/1A2n.svg",
+            imgSrc: "https://api.iconify.design/logos:stripe.svg",
             description:
               "An online payment processing platform for internet businesses.",
           },
           {
             title: "Microsoft",
-            imgSrc: "https://svgshare.com/i/1A1R.svg",
+            imgSrc: "https://api.iconify.design/logos:microsoft-icon.svg",
             description:
               "A multinational technology company that produces computer software, consumer electronics, and personal computers.",
           },
           {
             title: "Figma",
-            imgSrc: "https://svgshare.com/i/1A3j.svg",
+            imgSrc: "https://api.iconify.design/logos:figma.svg",
             description:
               "A web-based design tool for user interface and user experience design.",
           },
           {
             title: "Canva",
-            imgSrc: "https://svgshare.com/i/1A3E.svg",
+            imgSrc: "https://api.iconify.design/logos:canva.svg",
             description:
               "A graphic design platform that allows users to create social media graphics, presentations, and other visual content.",
           },
           {
             title: "React Router",
-            imgSrc: "https://svgshare.com/i/1A2t.svg",
+            imgSrc: "https://api.iconify.design/logos:react-router.svg",
             description:
               "A routing library for React that enables navigation among views of various components in a React application.",
           },
@@ -174,7 +173,7 @@ const MySkills = () => {
   data-tooltip-content={slideContent.title}
    
 >
-  <div className="flex-col bg-[#fffffff] hover:bg-white text-white hover:text-black rounded-tr-[90px] shadow-lg text-center p-6 flex items-center justify-center w-full h-full">
+  <div className="flex-col bg-[#1d0e35] hover:bg-white text-white hover:text-black rounded-tr-[90px] shadow-lg text-center p-6 flex items-center justify-center w-full h-full">
     <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4">
       <img src={slideContent.imgSrc} alt={slideContent.title} className="object-contain w-full h-full" />
     </div>
@@ -204,4 +203,3 @@ const MySkills = () => {
 };
 
 export default MySkills;
-
